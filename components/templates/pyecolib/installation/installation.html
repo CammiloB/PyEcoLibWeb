@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fontawesome/fontawesome/css/all.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'home/index.js'%}"></script>
+    <title>PyEcoLib</title>
+</head>
+
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+
+        <a id="show-sidebar" class="btn btn-lg" href="#" style="font-size: 3rem;">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="/index">PyEcoLib</a>
+                    <div id="close-sidebar" style="font-size: 2rem;">
+                        <i class="fa fa-window-close" width=30px></i>
+                    </div>
+                </div>
+
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Documentation</span>
+                        </li>
+                        <li>
+                            <a href="/index">
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/installation">
+                                <i class="fa fa-arrow-down"></i>
+                                <span>Installing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-play-circle"></i>
+                                <span>Get Started</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-code"></i>
+                                <span>Basic Functions</span>
+                            </a>
+                        </li>
+                        <li class="header-menu">
+                            <span>Examples</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Basic Examples</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Size Statistics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GeneExpressionDirectSSA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Advanced Examples</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">NoisyDiv</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sizerlike</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">AdvancedSizeStatistics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            <div class="sidebar-footer">
+                <p style="color:white">A PyEcoLib production</p>
+            </div>
+        </nav>
+
+
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <div class="container">
+                <h1>Installation</h1>
+            </div>
+
+            <hr>
+            <p>You can install using pip installation: </p>
+            <div class="console">
+                <p>> pip install PyEcoLib</p>
+            </div>
+            <p>to more info: <a href="https://pypi.org/project/PyEcoLib/">pypi</a></p>
+            <hr>
+
+            <p>If you want to install the packages manually, you can install with the requirements.txt file using the next command</p>
+            <div class="console">
+                <p>> pip install -r requirements.txt</p>
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- page-wrapper -->
+    <script src="{% static 'home/index.js'%}"></script>
+</body>
+
+</html>
